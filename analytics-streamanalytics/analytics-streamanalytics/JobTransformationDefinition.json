@@ -1,0 +1,29 @@
+{
+    "name":"MyTransformation",
+    "type":"Microsoft.StreamAnalytics/streamingjobs/transformations",
+    "properties":{
+        "streamingUnits":1,
+        "script":null,
+        "query":" SELECT 'MXChip01' AS ConnectionDeviceId,
+        CAST(AVG((temperature * 1.8) + 32) AS BIGINT) AS 'Temperature',
+        CAST(AVG(humidity) AS BIGINT) AS 'Humidity',
+        System.Timestamp AS [Timestamp] 
+       INTO
+           AnalyticsDL01
+       FROM
+           IoTHub01 TIMESTAMP BY EVENTPROCESSEDUTCTIME
+       GROUP BY ConnectionDeviceId,TumblingWindow(mi,5)
+       
+       
+       SELECT
+        'MXChip01' AS ConnectionDeviceId,
+        CAST(AVG((temperature * 1.8) + 32) AS BIGINT) AS 'Temperature',
+        CAST(AVG(humidity) AS BIGINT) AS 'Humidity',
+        System.Timestamp AS [Timestamp] 
+       INTO
+           IoTStream
+       FROM
+           IoTHub01 TIMESTAMP BY EVENTPROCESSEDUTCTIME
+       GROUP BY ConnectionDeviceId,TumblingWindow(mi,5)"
+    }
+}

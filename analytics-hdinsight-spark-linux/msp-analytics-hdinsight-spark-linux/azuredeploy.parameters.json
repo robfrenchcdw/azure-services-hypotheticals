@@ -4,22 +4,22 @@
     "parameters":{
 
         "location":{
-            "value":"centralus"
+            "value":"northcentralus"
         },
         "clusterName":{
             "value":"msp-spark-clu-01"
         },
         "clusterLoginUserName":{
-            "value":"robfrench"
+            "value":"clustadmin"
         },
         "clusterLoginPassword":{
-            "value":"CDW20205!8"
+            "value":"ztA6UxYqAOvAg1TX4ATp!"
         },
         "sshUserName":{
-            "value":"sshrob"
+            "value":"sshuser"
         },
         "sshPassword":{
-            "value":"CDW20205!8"
+            "value":"c2418116fdba76707c302152e14ec06e"
         }
     }
 }

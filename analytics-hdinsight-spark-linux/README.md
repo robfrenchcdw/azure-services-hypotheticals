@@ -9,17 +9,14 @@ This template will create a Spark Cluster in Azure HDInsight, which is is the Mi
 
 The following resources are deployed as part of the solution
 
-### Resource provider 1
+### Resource provider
 
-Description Resource Provider 1
+Description Resource Provider
 
-+ **Resource type 1A**: Microsoft.HDInsight/clusters
++ **Resource type**: Microsoft.HDInsight/clusters
 
-### Resource provider 2 (e.g., what other Azure Services are deployed?)
 
-Description Resource Provider 2
-
-+ **Resource type 2A**:Microsoft.Storage/storageAccounts
++ **Resource type**: Microsoft.Storage/storageAccounts
 
 ## Prerequisites
 

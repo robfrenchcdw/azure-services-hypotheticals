@@ -4,9 +4,9 @@
         "datasource": {
             "type": "Microsoft.Devices/IotHubs",
             "properties": {
-                "iotHubNamespace": "CustomerIoTHubName",
+                "iotHubNamespace": "analytics-iothub-01",
                 "sharedAccessPolicyName": "iothubowner",
-                "sharedAccessPolicyKey": "accesspolicykey",
+                "sharedAccessPolicyKey": "mqV7t4vvDhyxGDGDdsg8A50Yai0+on2jSe81ased/NQ=",
                 "endpoint": "messages/events",
                 "consumerGroupName": "$Default"
                 }
@@ -21,6 +21,6 @@
             }
         }
     },
-    "name": "IoTHubInput",
+    "name": "analytics-iothub-01",
     "type": "Microsoft.StreamAnalytics/streamingjobs/inputs"
 }

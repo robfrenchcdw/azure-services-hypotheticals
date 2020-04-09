@@ -26,7 +26,7 @@ Modify the azuredeploy.parameters.json file to include the following for each cu
 
 -storageAccountName - the name of the storage account
 
--accountType - 
+-isHnsEnabled - set to **true**. This is where the standard storage account is enabled as a Data Lake Store Gen2.
 
 -largeFileSharesState - "Enabled" or "Disabled"
 

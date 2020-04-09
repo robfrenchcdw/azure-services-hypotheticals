@@ -43,8 +43,8 @@ $curDir            = Split-Path -parent $MyInvocation.MyCommand.Definition
 $templateBasename  = "azuredeploy.json"
 $paramBasename     = "azuredeploy.parameters.json"
 
-$templateFile = "$curDir\$service\$templateBasename"
-$paramFile    = "$curDir\$service\$paramBasename"
+$templateFile = "$curDir\$rgName\$templateBasename"
+$paramFile    = "$curDir\$rgName\$paramBasename"
 
 
 write-host "Service:       $service"

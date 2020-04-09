@@ -3,13 +3,13 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "streamAnalyticsJobName": {
-      "value": "<add your StreamAnalyticsJobName here>"
+      "value": "msp-analytics-sa01"
     },
     "numberOfStreamingUnits": {
       "value": 1
     },
     "query": {
-      "value": "SELECT\r\n    *\r\nINTO\r\n    [YourOutputAlias]\r\nFROM\r\n    [YourInputAlias]"
+      "value": "SELECT\r\n    *\r\nINTO\r\n    [YourOutputAlias]\r\nFROM\r\n  analytics-iothub-01"
     }
   }
 }

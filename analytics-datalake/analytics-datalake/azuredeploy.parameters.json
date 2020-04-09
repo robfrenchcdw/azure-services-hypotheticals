@@ -3,10 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "location": {
-            "value": "<add location here>"
+            "value": "northcentralus"
         },
         "storageAccountName": {
-            "value": "<add name of the storage account here>"
+            "value": "mspanalyticsadlgen2"
         },
         "accountType": {
             "value": "Standard_LRS"
@@ -24,7 +24,7 @@
             "value": true
         },
         "largeFileSharesState": {
-            "value": "<add value here: Disabled or Enabled>"
+            "value": "Disabled"
         }
     }
 }
