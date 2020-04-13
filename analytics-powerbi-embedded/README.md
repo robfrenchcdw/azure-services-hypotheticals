@@ -9,7 +9,7 @@ This solution provides a template for deploying Power BI Embedded.
 
 ### Resource provider
 
-Microsoft.PowerBIDedicated
+Microsoft.PowerBI
 
 + **Resource type**: capacities
 
@@ -46,6 +46,24 @@ _Example:_
   .\deploy.ps1 msp-sample-vnet msp-sample
 
   Will deploy the template located at .\msp-sample-vnet\azuredeploy.json into the *msp-sample* resource group.
+
+## Removal steps
+
+From a PowerShell window, execute the remove.ps1 script with the following parameters:
+
++ ServiceName    -  The name of the Azure service being removed
++ ResourceGroup  -  The name of the resource group for removal
+
+```
+.\remove.ps1  <ServiceName> <ResourceGroup>
+
+```
+_Example:_
+
+  .\remove.ps1 msp-sample-pbie msp-pbie-rg
+
+  Will remove the service *msp-sample-pbie* from the *msp-pbie-rg* resource group.
+
 
 ## Usage
 https://docs.microsoft.com/en-us/power-bi/developer/embedding

@@ -51,11 +51,29 @@ _Example:_
 
   Will deploy the template located at .\msp-sample-vnet\azuredeploy.json into the *msp-sample* resource group.
 
+
+## Removal steps
+
+From a PowerShell window, execute the remove.ps1 script with the following parameters:
+
++ ServiceName    -  The name of the Azure service being removed
++ ResourceGroup  -  The name of the resource group for removal
+
+```
+.\remove.ps1  <ServiceName> <ResourceGroup>
+
+```
+_Example:_
+
+  .\remove.ps1 msp-sample-adl msp-adl-rg
+
+  Will remove the service *msp-sample-asa* from the *msp-asa-rg* resource group.
+
 ## Usage
 
 ### Connect
 
-Inputs and Outputs will be manually configured by the customer. These will establish the input and output data streams, including any aggregations or transformations.
+Inputs and Outputs will generally be manually configured by the customer. If not, these can be configured via the included json script. These will establish the input and output data streams, including any aggregations or transformations.
 
 #### Management
 
@@ -69,4 +87,4 @@ https://docs.microsoft.com/en-us/azure/stream-analytics/
 
 
 
-`Tags: Tag1, Tag2, Tag3`
+`Tags: Azure Stream Analytics`
