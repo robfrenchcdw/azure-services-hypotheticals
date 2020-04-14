@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "name": {
-            "value": "msp-analytics-pbe"
+            "value": "msp-analytics-pbi-01"
         },
         "location": {
             "value": "North Central US"

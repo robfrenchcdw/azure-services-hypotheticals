@@ -58,4 +58,4 @@ if ($result  -eq $false) {
     exit
 }
 
-New-AzResourceGroupDeployment -ResourceGroupName $rgName -TemplateFile $templateFile -TemplateParameterFile $paramFile
+New-AzureRmDataLakeStoreAccount -ResourceGroupName $rgName -TemplateFile $templateFile -TemplateParameterFile $paramFile

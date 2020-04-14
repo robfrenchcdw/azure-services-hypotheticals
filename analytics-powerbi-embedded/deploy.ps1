@@ -43,8 +43,8 @@ $curDir            = Split-Path -parent $MyInvocation.MyCommand.Definition
 $templateBasename  = "azuredeploy.json"
 $paramBasename     = "azuredeploy.parameters.json"
 
-$templateFile = "$curDir\$service\$templateBasename"
-$paramFile    = "$curDir\$service\$paramBasename"
+$templateFile = "$curDir\$templateBasename"
+$paramFile    = "$curDir\$paramBasename"
 
 
 write-host "Service:       $service"
@@ -58,4 +58,4 @@ if ($result  -eq $false) {
     exit
 }
 
-New-AzResourceGroupDeployment -ResourceGroupName $rgName -TemplateFile $templateFile -TemplateParameterFile $paramFile 
+New-AzureRmPowerBIEmbeddedCapacity -ResourceGroupName $rgName -TemplateFile $templateFile -TemplateParameterFile $paramFile 
