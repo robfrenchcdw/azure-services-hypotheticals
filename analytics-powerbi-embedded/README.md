@@ -29,8 +29,10 @@ Modify the azuredeploy.parameters.json file to include the following for each cu
                 "A3",
                 "A4",
                 "A5",
-                "A6")
+                "A6") 
 - tags (such as owner)
+
+*See this article for current SKU descriptions: https://docs.microsoft.com/en-us/power-bi/developer/embedded/embedded-capacity#sku-memory-and-computing-power*
 
 From a PowerShell window, execute the deploy.ps1 script with the following parameters:
 
@@ -43,7 +45,7 @@ From a PowerShell window, execute the deploy.ps1 script with the following param
 
 _Example:_
 
-  .\deploy.ps1 msp-sample-vnet msp-sample
+  .\deploy.ps1 msp-sample-pbie msp-pbie-rg
 
   Will deploy the template located at .\msp-sample-vnet\azuredeploy.json into the *msp-sample* resource group.
 
@@ -66,6 +68,9 @@ _Example:_
 
 
 ## Usage
+
+https://docs.microsoft.com/en-us/power-bi/developer/embedded/embedded-faq
+
 https://docs.microsoft.com/en-us/power-bi/developer/embedding
 
 

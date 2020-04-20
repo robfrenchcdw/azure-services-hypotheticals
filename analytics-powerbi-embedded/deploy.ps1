@@ -58,4 +58,4 @@ if ($result  -eq $false) {
     exit
 }
 
-New-AzureRmPowerBIEmbeddedCapacity -ResourceGroupName $rgName -TemplateFile $templateFile -TemplateParameterFile $paramFile 
+New-AzResourceGroupDeployment -ResourceGroupName $rgName -TemplateFile $templateFile -TemplateParameterFile $paramFile 
