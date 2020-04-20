@@ -4,7 +4,7 @@ This template deploys an **Azure Stream Analaytics** job. **Azure Stream Analyti
 
 ## Overview and deployed resources
 
-TThis template will deploy a Stream Analytics job. A generic query will be added, but must be configured.
+This template will deploy a Stream Analytics job. A generic query will be added, but must be configured.
 + SELECT\r\n    *\r\nINTO\r\n    [YourOutputAlias]\r\nFROM\r\n    [YourInputAlias]
 
 The following resources are deployed as part of the solution
