@@ -1,25 +1,27 @@
 {
-    "$schema":"https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
-    "contentVersion":"1.0.0.0",
-    "parameters":{
-
-        "location":{
-            "value":"northcentralus"
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "northcentralus"
         },
-        "clusterName":{
-            "value":"msp-spark-clu-01"
+        "clusterName": {
+            "value": "msp-spark-clu-01"
         },
-        "clusterLoginUserName":{
-            "value":"clustadmin"
+        "clusterLoginUserName": {
+            "value": "clustadmin"
         },
-        "clusterLoginPassword":{
-            "value":"ztA6UxYqAOvAg1TX4ATp!"
+        "clusterLoginPassword": {
+            "value": "GEN-PASSWORD"
         },
-        "sshUserName":{
-            "value":"sshuser"
+        "sshUserName": {
+            "value": "sshuser"
         },
-        "sshPassword":{
-            "value":"c2418116fdba76707c302152e14ec06e"
+        "sshPassword": {
+            "value": "GEN-PASSWORD"
+        },
+        "vmSize": {
+            "value": "Standard_D12_v2"
         }
     }
 }
